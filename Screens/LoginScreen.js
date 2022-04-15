@@ -16,11 +16,12 @@ const LoginScreen = () => {
                 navigation.replace("Home");
             }
         })
+        
         return unsubscribe
     },[ ])
 
     const handleSignup = ()=>{
-        
+
         auth.createUserWithEmailAndPassword(email,pass).
         then(usercredentials=>{
             const user = usercredentials.user;
